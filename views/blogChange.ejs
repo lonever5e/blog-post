@@ -1,0 +1,43 @@
+<%- include('./partials/header.ejs') %>
+
+    <div class="footer">
+        <h2><%= todo %> and Post your Blog here</h2>
+        <form method="post"  enctype="multipart/form-data">
+            <div class="container">
+                <div class="center">
+                    <% if(Object.keys(blog).length != 0) { %>
+                        <div id="blog-edit"></div>
+                        <script>
+                            document.getElementById('blog-edit').style.backgroundImage = "url(<%= blog['image'] %>)";
+                        </script>
+                    <% } %>
+                </div>
+                
+                <div class="flex-form  form-title">
+                    <label for="blog-title" class="col-12 quote">Blog title:</label>
+                </div>
+
+                <div class="flex-form  form-input">
+                    <input type="text" class="col-12" id="blog-title" name="blog-title" value="<%= blog['title'] %>">
+                </div>
+                
+                <div class="flex-form  form-title quote">
+                    <label for="blog-content" class="col-12">content:</label>
+                </div>
+
+                <div class="flex-form content">
+                    <textarea id="blog-content" class="col-12  form-input" name="blog-content" rows="4" cols="50">
+                        <%= blog['content'] %>
+                    </textarea>
+                </div>
+                <label for="image">Select a file if need to be changed:</label>
+                <input type="file" name="image" accept="image/*"%>"><br><br>
+                <button formaction=<%= action %> class="button" type="submit"><%= todo %></button>
+                <% if(Object.keys(blog).length != 0) { %>
+                    <button formaction = <%= `/deleteBlog/${id}` %> class="button" id="delete-btn" type="submit"> Delete</button>
+                <% } %>
+            </div>
+        </form> 
+    </div>
+
+<%- include('./partials/footer.ejs') %> 

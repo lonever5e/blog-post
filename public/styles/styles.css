@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+.contain {
+    text-align: center;
+}
+
+.quote {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 0.4rem;
+    margin: 40px 0 10px 0;
+}
+
+h1 {
+    font-size: 8rem;
+    margin-bottom: 50px;
+    font-family: serif;
+    font-weight: 900;
+    color: black;
+}
+
+.row {
+    border: 1px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    text-align: center;
+    padding: 0 20%;
+}
+
+.border-left {
+    border-left: 1px solid black;
+}
+
+.border-right {
+    border-right: 1px solid black;
+}
+
+.border-top {
+    border-top: 1px solid black;
+}
+
+.no-border {
+    border: 0px;
+}
+
+.row div {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.row div svg {
+    height: 30px;
+    width: auto;
+}
+
+.active {
+    color: #6600ea;
+}
+
+.row input {
+    border: none;
+    width: 50%;
+}
+
+.flex-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-title {
+    text-align: left;
+}
+
+.form-input input, #message, #email {
+    border: 0px;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+
+form .container div {
+    margin: 30px 0;
+}
+
+form .button {
+    background-color: #6600ea;
+    color: white;
+    padding: 10px 50px;
+    border: 0;
+}
+
+.footer svg {
+    height: 50px;
+    width: auto;
+    margin: 50px 0;
+}
+
+.footer h2 {
+    font-family: serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.featured-post {
+    position: relative;
+    margin: 100px 25%;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.featured-post-title {
+    border: 1px solid black;
+    z-index: 5;
+    position: absolute;
+    background-color: white;
+    padding: 20px 40px;
+    letter-spacing: 0.4rem;
+    top: -20px;
+    left: -1px;
+}
+
+.featured-post img{
+    width: 100%;
+    height: auto;
+}
+
+.blog-title {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.featured-post-des {
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 350;
+}
+
+.blog-info {
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+.line {
+    height: 1px;
+    border-bottom: 1px solid black;
+}
+
+.flex-hori {
+    padding: 100px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    gap: 20px
+}
+
+.flex-hori h2 {
+    font-family: serif;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 900;
+}
+
+#email {
+    margin: 10px 20px 30px 0;
+    width: 300px;
+}
+
+#subscribe-btn {
+    background-color: #6600ea;
+    color: white;
+    padding: 10px 15px;
+    border: 0;
+    margin: 0 0 20px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    justify-content: center;
+    margin: 50px 0;
+    text-align: left;
+}
+
+.flex-verti {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+}
+
+.blog-card {
+    height: 350px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 10fr 11fr;
+    overflow: hidden;
+}
+
+.blog-image {
+    background-image: url("https://plus.unsplash.com/premium_photo-1694708455249-992010f9db32?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+}
+
+.blog-card .blog-content {
+    display: grid;
+    grid-template-rows: 260px 40px;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: left;
+}
+
+.blog-card .blog-content .blog-info {
+    height: 40px;
+    top: 280px;
+}
+
+.blog-preview {
+    overflow: hidden;
+}
+
+.grid-container .quote {
+    margin-bottom: 50px;
+}
+
+.blog-info p {
+    padding: 10px 0;
+}
+
+.profile-img img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid black;
+    margin-bottom: 40px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+.follow-me {
+    margin: 50px 0;
+}
+
+.socials {
+    display: flex;
+    padding: 10px ;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile {
+    border: 1px solid black;
+    text-align: left;
+    margin: 100px 25%;
+}
+
+.profile img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.aboutme {
+    /* margin-top: 50px; */
+    padding: 50px;
+    text-align: left;
+    border-top: 1px solid black
+}
+
+.aboutme h2 {
+    font-family: serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.padder {
+    padding: 0 20%;
+}
+
+.types {
+    display: flex;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.card-verti {
+    display: grid;
+    grid-template-rows: 5fr 4fr;
+    border: 1px solid black;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.card-verti .blog-content {
+    padding: 20px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    margin: 30px 0;
+}
+
+.content textarea{
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#blog-edit {
+    width: 400px;
+    height: 400px;
+    background-image: url("https://placehold.jp/400x400.png");
+    background-size: cover;
+    border: 1px solid black;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#delete-btn {
+    background-color: rgb(189, 9, 9);
+}
+
+@media only screen and (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .flex-verti.border-right{
+        border-right: 0px;
+    }
+    .featured-post {
+        margin: 100px 10%;
+    }
+    .profile {
+        margin: 100px 10%;
+    }
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+    .row {
+        padding: 0;
+    }
+  }
+
+@media only screen and (max-width: 576px) {
+    h1 {
+        font-size: 4rem;
+    }
+    .flex-hori {
+        padding: 20px 20px;
+    }
+    .flex-verti {
+        padding: 0 20px;
+    }
+    .hidden {
+        display: block;
+        text-align: left;
+    }
+    .names   {
+        display: none;
+    }
+    .row  {
+        display: flex;
+        flex-direction: column;
+    }
+    .row .col {
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+    }
+    #blog-edit {
+        width: 200px;
+        height: 200px;
+        background-image: url("https://placehold.jp/200x200.png");
+    }
+}
